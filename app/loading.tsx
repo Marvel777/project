@@ -4,12 +4,12 @@ export default function Loading() {
 
     return (
         <div
-            className={ `flex items-center justify-center min-h-screen transition-opacity duration-500 ease-in-out` }
+            className={ `flex items-center justify-center min-h-screen transition-opacity opacity-100 duration-500 ease-in-out` }
         >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" className="w-32 h-32">
                 <path
                     fill="none"
-                    stroke="#54506F"
+                    stroke="#737373"
                     strokeWidth="15"
                     strokeLinecap="round"
                     strokeLinejoin="round"
