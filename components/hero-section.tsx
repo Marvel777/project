@@ -46,7 +46,7 @@ export function HeroSection() {
             transition={ { duration: 0.6 } }
           >
 
-            <TextAnimate className="font-bold text-3xl md:text-4xl lg:text-5xl mb-4" animation="blurIn" as="h1" delay={ 0 }>
+            <TextAnimate className="font-bold text-3xl md:text-4xl lg:text-5xl mb-4 text-white" animation="blurIn" as="h1" delay={ 0 }>
               Hello, I&apos;m
               Frontend Developer
             </TextAnimate>
