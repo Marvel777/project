@@ -4,6 +4,7 @@ import { ContactForm } from "@/components/contact-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { socialLinks } from "@/lib/constants";
+import { BackForwardButtons } from "@/components/back-forward-button";
 
 export const metadata: Metadata = {
   title: "Contact | Frontend Developer Portfolio",
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="container px-4 mx-auto py-24 md:py-32">
+      <BackForwardButtons />
       <div className="flex flex-col items-center text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h1>
         <p className="text-muted-foreground max-w-2xl">

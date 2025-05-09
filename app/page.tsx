@@ -4,6 +4,8 @@ import { SkillsSection } from "@/components/skills-section";
 import { FeaturedProjects } from "@/components/featured-projects";
 import { motion } from 'framer-motion';
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import { InfiniteCard } from "@/components/Infinite-card";
+import { BackForwardButtons } from "@/components/back-forward-button";
 
 
 export default function Home() {
@@ -11,6 +13,7 @@ export default function Home() {
 
 
     <div >
+      <BackForwardButtons />
       <AuroraBackground>
         <motion.div
           initial={ { opacity: 0.0, y: 40 } }
@@ -21,10 +24,11 @@ export default function Home() {
             ease: "easeInOut",
           } }
           className="relative flex flex-col gap-4 items-center justify-center px-4"
-        ></motion.div>
+        >
+        </motion.div>
         <HeroSection />
       </AuroraBackground>
-
+      <InfiniteCard />
       <SkillsSection />
       <FeaturedProjects />
     </div>

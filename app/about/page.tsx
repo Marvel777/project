@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FileDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Timeline } from "@/components/ui/timeline";
+import { BackForwardButtons } from "@/components/back-forward-button";
 
 export const metadata: Metadata = {
   title: "About | Frontend Developer Portfolio",
@@ -87,7 +88,7 @@ export default function AboutPage() {
               height={ 500 }
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
+            <Image
               src="https://assets.aceternity.com/cards.png"
               alt="cards template"
               width={ 500 }
@@ -158,6 +159,7 @@ export default function AboutPage() {
   ];
   return (
     <div className="container px-4 mx-auto py-24 md:py-32">
+      <BackForwardButtons />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
         <div>
           <h1 className="text-3xl md:text-4xl font-bold mb-6">About Me</h1>
@@ -203,8 +205,8 @@ export default function AboutPage() {
         <div className="flex items-center justify-center">
           <div className="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden border-8 border-muted">
             <Image
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Professional portrait"
+              src="/photo.png"
+              alt="Professional "
               className="object-cover"
               fill
               priority

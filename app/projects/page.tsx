@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ProjectCardDetailed } from "@/components/project-card-detailed";
 import { projects } from "@/lib/constants";
+import { BackForwardButtons } from "@/components/back-forward-button";
 
 // export const metadata: Metadata = {
 //   title: "Projects | Frontend Developer Portfolio",
@@ -46,6 +47,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="container px-4 mx-auto py-24 md:py-32">
+      <BackForwardButtons />
       <div className="flex flex-col items-center text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h1>
         <p className="text-muted-foreground max-w-2xl">

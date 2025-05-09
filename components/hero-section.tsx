@@ -46,8 +46,8 @@ export function HeroSection() {
             transition={ { duration: 0.6 } }
           >
 
-            <TextAnimate className="font-bold text-3xl md:text-4xl lg:text-5xl mb-4 text-white" animation="blurIn" as="h1" delay={ 0 }>
-              Hello, I&apos;m
+            <TextAnimate className="font-bold text-3xl md:text-4xl lg:text-5xl mb-4 dark:text-white " animation="blurIn" as="h1" delay={ 0 }>
+              Hello, I&apos;m Marvel,
               Frontend Developer
             </TextAnimate>
             <motion.p
@@ -74,7 +74,7 @@ export function HeroSection() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button className="dark:text-white" variant="outline" size="lg" asChild>
                 <Link href="/contact">Contact Me</Link>
               </Button>
             </motion.div>
@@ -87,10 +87,10 @@ export function HeroSection() {
             animate={ { opacity: 1, scale: 1 } }
             transition={ { delay: 0.3, duration: 0.6 } }
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/10">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border-4 border-primary/10">
               <Image
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Professional headshot"
+                src="/photo.png"
+                alt="Professional"
                 className="object-cover"
                 fill
                 priority
