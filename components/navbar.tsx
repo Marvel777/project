@@ -58,18 +58,21 @@ export function Navbar() {
   return (
 
     <header
-      className="fixed  bottom-28 left-full pr-20 sm:pr-0    md:bottom-3 md:left-1/2   transform -translate-x-1/2 z-50 px-0 transition-all duration-300"
+      className="fixed bottom-28 left-full pr-20 sm:pr-0 md:bottom-3 md:left-1/2 transform -translate-x-1/2 z-50 px-0 transition-all duration-300"
     >
-      <BackgroundGradient className=" rounded-full">
-        <div >
-          <FloatingDock
-            mobileClassName="translate-y-20"
-            items={ links }
-          />
-        </div>
-      </BackgroundGradient>
+      {/* Desktop version with BackgroundGradient */ }
+      <div className="hidden md:block">
+        <BackgroundGradient className="rounded-full">
+          <FloatingDock mobileClassName="translate-y-20" items={ links } />
+        </BackgroundGradient>
+      </div>
 
-    </header >
+      {/* Mobile version without BackgroundGradient */ }
+      <div className="block md:hidden">
+        <FloatingDock mobileClassName="translate-y-20" items={ links } />
+      </div>
+    </header>
+
 
   );
 }

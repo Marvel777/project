@@ -66,7 +66,7 @@ function SkillGrid({ skills }: { skills: Skill[] }) {
           initial={ { opacity: 0, y: 20 } }
           whileInView={ { opacity: 1, y: 0 } }
           viewport={ { once: true } }
-          transition={ { duration: 0.4, delay: index * 0.05 } }
+          transition={ { duration: 0.3, delay: index * 0.01 } }
         >
           <SkillCard skill={ skill } />
         </motion.div>
