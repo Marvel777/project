@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { InfiniteCard } from "@/components/Infinite-card";
 import { BackForwardButtons } from "@/components/back-forward-button";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 
 
 export default function Home() {
@@ -29,7 +30,10 @@ export default function Home() {
         <HeroSection />
       </AuroraBackground>
       <InfiniteCard />
-      <SkillsSection />
+      <TracingBeam >
+        <SkillsSection />
+      </TracingBeam>
+
       <FeaturedProjects />
     </div>
   );
