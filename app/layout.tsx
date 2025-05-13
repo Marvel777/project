@@ -10,7 +10,7 @@ import { ThemeToggle } from './../components/theme-toggle';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Frontend Developer Portfolio',
+  title: 'Marvel Maher Frontend Developer Portfolio',
   description: 'Professional portfolio showcasing frontend development skills, projects, and expertise.',
   keywords: ['frontend developer', 'web developer', 'portfolio', 'React', 'Next.js', 'JavaScript', 'TypeScript'],
 };
