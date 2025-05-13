@@ -84,14 +84,7 @@ function ProjectDetailDialog({
         <DialogHeader>
           <div className="flex justify-between items-center">
             <DialogTitle className="text-2xl">{ project.title }</DialogTitle>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={ () => setOpen(false) }
-              className="h-8 w-8 rounded-full"
-            >
-              <X className="h-4 w-4" />
-            </Button>
+
           </div>
           <DialogDescription>
             { project.featured && (
