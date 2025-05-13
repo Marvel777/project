@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <Link href="/" className="font-bold text-lg">
-              <span className="text-primary">Dev</span>Portfolio
+              <span className="text-primary">Marvel</span>.dev
             </Link>
             <p className="text-sm text-muted-foreground mt-1">
               Crafting exceptional digital experiences
@@ -26,7 +26,7 @@ export function Footer() {
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="GitHub Profile"
               >
-                <Github size={20} />
+                <Github size={ 20 } />
               </Link>
               <Link
                 href="https://linkedin.com"
@@ -35,7 +35,7 @@ export function Footer() {
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LinkedIn Profile"
               >
-                <Linkedin size={20} />
+                <Linkedin size={ 20 } />
               </Link>
               <Link
                 href="https://twitter.com"
@@ -44,18 +44,18 @@ export function Footer() {
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Twitter Profile"
               >
-                <Twitter size={20} />
+                <Twitter size={ 20 } />
               </Link>
               <Link
                 href="mailto:email@example.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email Contact"
               >
-                <Mail size={20} />
+                <Mail size={ 20 } />
               </Link>
             </div>
             <p className="text-xs text-muted-foreground">
-              © {currentYear} DevPortfolio. All rights reserved.
+              © { currentYear } Marvel. All rights reserved.
             </p>
           </div>
         </div>

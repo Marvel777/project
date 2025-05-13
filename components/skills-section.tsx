@@ -25,7 +25,7 @@ export function SkillsSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Technical Skills</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A collection of technologies and tools I've worked with throughout my career. I'm constantly learning and adding new skills to my repertoire.
+            A collection of technologies and tools I&apos;ve worked with throughout my career. I&apos;m constantly learning and adding new skills to my repertoire.
           </p>
         </motion.div>
 
