@@ -79,7 +79,7 @@ function SkillCard({ skill }: { skill: Skill }) {
   return (
     <HoverBorderGradient className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border w-60">
       <div className="flex justify-between items-center mb-3">
-        <h3 className="font-medium">{ skill.name }</h3>
+        <h3 className="font-medium text-muted-foreground">{ skill.name }</h3>
         <span className="text-sm text-muted-foreground">{ skill.level }%</span>
       </div>
 
