@@ -1,20 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { LayoutDashboardIcon, MessageCircleCodeIcon, Moon, Sun, X } from "lucide-react";
+import { LayoutDashboardIcon, MessageCircleCodeIcon } from "lucide-react";
 import { IconHome, IconTerminal2 } from "@tabler/icons-react";
 import { FloatingDock } from "./ui/floating-dock";
-import { useTheme } from "next-themes";
 import { BackgroundGradient } from "./ui/background-gradient";
 
 
 
 export function Navbar() {
-
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null // avoid hydration mismatch
-
 
   const links = [
     {
