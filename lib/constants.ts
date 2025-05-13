@@ -1,4 +1,4 @@
-import { Code, Server, Database, PenTool, Lightbulb, Github } from "lucide-react";
+import { Code, Server, Database, PenTool, Lightbulb, Github, GraduationCap } from "lucide-react";
 
 export const socialLinks = {
   github: "https://github.com/Marvel777",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     id: "cms",
     title: "Content Management System",
     description: "A robust content management system for creating and managing website content, including blog posts, pages, and media assets.",
-    image: "/cms-2.png",
+    image: "/cms-1.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Context", "MongoDB", "MUI", "i18n"],
     demoUrl: "https://dev.tungsten-media.com/en/dashboard",
     githubUrl: "https://github.com/Marvel777",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     id: "portfolio_drfreehanzakarya",
     title: "portfolio-dr-freehanzakarya",
     description: "A welcoming digital space for patients to explore Dr.Freehan zakarya's practice, services, and professional background with intuitive navigation",
-    image: "/dr_freehan.png",
+    image: "/dr-freehan.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "CMS",],
     demoUrl: "https://drfreehanzakarya.com",
     githubUrl: "https://github.com/Marvel777",
@@ -114,39 +114,35 @@ export type TimelineItem = {
 
 export const timelineItems: TimelineItem[] = [
   {
-    date: "2022 - Present",
-    title: "Senior Frontend Developer",
-    description: "Leading frontend development for a SaaS platform, implementing modern architecture and mentoring junior developers.",
+    date: "2024 - Present",
+    title: "Frontend Developer",
+    description: "Working on a CMS platform using Next.js, TypeScript, and Tailwind CSS. Responsible for developing scalable components, maintaining clean architecture, and mentoring junior developers on best practices.",
     icon: Code,
   },
   {
-    date: "2020 - 2022",
-    title: "Frontend Developer",
-    description: "Developed responsive web applications using React and Next.js, collaborated with designers to create engaging user experiences.",
+    date: "2023 - 2024",
+    title: "MERN Stack Developer",
+    description: "Developed responsive web applications using covering MongoDB, Express.js, React, and Node.js. , collaborated with designers to create engaging user experiences.",
     icon: PenTool,
   },
   {
-    date: "2018 - 2020",
+    date: "2022 - 2023",
     title: "Full Stack Developer",
-    description: "Built RESTful APIs, implemented database architecture, and created frontend interfaces for various client projects.",
+    description:
+      "Built RESTful APIs and backend logic using Django. Designed and developed responsive frontend interfaces with HTML, CSS, and JavaScript for various client projects.",
     icon: Server,
   },
   {
-    date: "2016 - 2018",
-    title: "Junior Web Developer",
-    description: "Started career developing HTML/CSS templates and working with jQuery. First introduction to modern JavaScript frameworks.",
-    icon: Github,
+    date: "2023 - 2024",
+    title: "Information Technology Institute (ITI)",
+    description:
+      "Completed a one-month intensive MERN stack program covering MongoDB, Express.js, React, and Node.js. Built full-stack applications with RESTful APIs, user authentication, and frontend state management.",
+    icon: GraduationCap,
   },
   {
-    date: "2012 - 2016",
-    title: "Computer Science Degree",
+    date: "2020 - 2024",
+    title: "Computer Science Degree ",
     description: "Studied algorithms, data structures, software engineering principles, and completed various programming projects.",
     icon: Database,
-  },
-  {
-    date: "2010 - 2012",
-    title: "Self-taught Programmer",
-    description: "Began learning programming through online resources, building small web projects and exploring different technologies.",
-    icon: Lightbulb,
   },
 ];

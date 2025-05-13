@@ -1,10 +1,11 @@
 import { Metadata } from "next";
-import { Mail, MapPin, Clock, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, MapPin, Clock, Linkedin, Github, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { socialLinks } from "@/lib/constants";
 import { BackForwardButtons } from "@/components/back-forward-button";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 export const metadata: Metadata = {
   title: "Contact | Frontend Developer Portfolio",
@@ -18,8 +19,9 @@ export default function ContactPage() {
       <div className="flex flex-col items-center text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h1>
         <p className="text-muted-foreground max-w-2xl">
-          Have a project in mind or want to discuss a potential collaboration? I&apos;m currently available for freelance work and job opportunities.
+          Have a project in mind or looking to collaborate? I&lsquo;m open to freelance opportunities and always excited to work on innovative ideas. Let&lsquo;s build something great together.
         </p>
+
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
@@ -28,7 +30,7 @@ export default function ContactPage() {
           title="Email"
           description="Feel free to email me directly"
           action={ socialLinks.email }
-          actionLabel="email@example.com"
+          actionLabel="mahermarvel@gmail.com"
         />
 
         <ContactCard
@@ -36,7 +38,7 @@ export default function ContactPage() {
           title="Location"
           description="Currently based in"
           action="#"
-          actionLabel="San Francisco, CA"
+          actionLabel="Egypt, Giza"
         />
 
         <ContactCard
@@ -44,8 +46,16 @@ export default function ContactPage() {
           title="Availability"
           description="Currently available for new projects"
           action="#"
-          actionLabel="Pacific Time (GMT-7)"
+          actionLabel="Operating in Egypt Time Zone (GMT+2)"
         />
+        <ContactCard
+          icon={ <Phone className="h-6 w-6" /> }
+          title="Phone"
+          description="Feel free to reach out anytime"
+          action="tel:+201200409971" // use your actual number here
+          actionLabel="+20 120 040 9971" // readable format
+        />
+
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -83,19 +93,7 @@ export default function ContactPage() {
                   LinkedIn
                 </a>
               </Button>
-
-              <Button variant="outline" size="lg" className="w-full" asChild>
-                <a
-                  href={ socialLinks.twitter }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Twitter className="mr-2 h-4 w-4" />
-                  Twitter
-                </a>
-              </Button>
             </div>
-
             <div className="mt-8 p-4 bg-card rounded-lg border">
               <p className="text-sm text-center text-muted-foreground">
                 <span className="font-medium text-foreground">Current Status:</span> Available for freelance projects and full-time opportunities

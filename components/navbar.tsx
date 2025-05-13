@@ -1,11 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
-import { Moon, Sun, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { IconBrandGithub, IconBrandX, IconExchange, IconHome, IconNewSection, IconTerminal2 } from "@tabler/icons-react";
+import { LayoutDashboardIcon, MessageCircleCodeIcon, Moon, Sun, X } from "lucide-react";
+import { IconHome, IconTerminal2 } from "@tabler/icons-react";
 import { FloatingDock } from "./ui/floating-dock";
 import { useTheme } from "next-themes";
 import { BackgroundGradient } from "./ui/background-gradient";
@@ -13,10 +10,6 @@ import { BackgroundGradient } from "./ui/background-gradient";
 
 
 export function Navbar() {
-
-
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
 
@@ -42,14 +35,14 @@ export function Navbar() {
     {
       title: "Projects",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <LayoutDashboardIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "projects",
     },
     {
       title: "Contact",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <MessageCircleCodeIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "/contact",
     },
