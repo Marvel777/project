@@ -1,6 +1,6 @@
 "use client";
 
-import { Moon, Sun } from "lucide-react";
+import { MoonStar, Sun } from "lucide-react";
 import { useTheme } from "@/lib/themes";
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
@@ -29,7 +29,7 @@ export function ThemeToggle() {
               className="h-[1.55rem] w-[1.55rem] "
               initial={ { rotate: 0, scale: 1 } }
               animate={ {
-                rotate: [0, 180, 180], // Sun rotates from 0 to 90 and back to 0
+                rotate: [0, 360], // Sun rotates from 0 to 90 and back to 0
                 scale: [1, 1, 1], // Slight scale-up effect for the sun when toggling
               } }
               transition={ {
@@ -58,7 +58,7 @@ export function ThemeToggle() {
 
               } }
             >
-              <Moon className="h-full w-full" />
+              <MoonStar className="h-full w-full" />
             </motion.div>
           ) }
 

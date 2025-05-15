@@ -1,8 +1,8 @@
-import { Code, Server, Database, PenTool, Lightbulb, Github, GraduationCap } from "lucide-react";
+import { Code, Server, Database, PenTool, GraduationCap } from "lucide-react";
 
 export const socialLinks = {
   github: "https://github.com/Marvel777",
-  linkedin: "https://linkedin.com/in/yourusername",
+  linkedin: "https://www.linkedin.com/in/marvel-maher-9b2213245",
   email: "mahermarvel@gmail.com",
 };
 

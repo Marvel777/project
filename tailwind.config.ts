@@ -62,6 +62,11 @@ const config: Config = {
         },
       },
       keyframes: {
+        shine: {
+          '0%': { backgroundPosition: '0% 0%' },
+          '50%': { backgroundPosition: '100% 100%' },
+          '100%': { backgroundPosition: '0% 0%' },
+        },
         scroll: {
           to: {
             transform: 'translate(calc(-50% - 0.5rem))',
@@ -97,8 +102,7 @@ const config: Config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         aurora: "aurora 60s linear infinite",
         scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
-
-
+        shine: 'shine var(--duration, 2s) infinite linear',
       },
     },
   },

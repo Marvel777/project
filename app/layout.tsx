@@ -6,6 +6,7 @@ import { Footer } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from './../lib/themes';
 import { ThemeToggle } from './../components/theme-toggle';
+import { ScrollProgress } from '@/components/magicui/scroll-progress';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <div className="fixed top-4 right-4 z-50">
             <ThemeToggle />
           </div>
+          <ScrollProgress />
           <Navbar />
           <main className="flex-grow">
             { children }

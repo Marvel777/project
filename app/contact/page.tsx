@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { socialLinks } from "@/lib/constants";
 import { BackForwardButtons } from "@/components/back-forward-button";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { ShineBorder } from "@/components/magicui/shine-border";
 
 export const metadata: Metadata = {
   title: "Contact | Frontend Developer Portfolio",
@@ -65,7 +65,9 @@ export default function ContactPage() {
         </div>
 
         <div className="flex flex-col justify-center">
-          <div className="bg-muted/30 p-8 rounded-lg border">
+          <div className="relative bg-muted/30 p-8 rounded-lg border">
+            <ShineBorder shineColor={ ["black", "white"] } />
+
             <h2 className="text-2xl font-bold mb-6">Connect With Me</h2>
             <p className="text-muted-foreground mb-8">
               I&apos;m also active on social media and developer communities. Feel free to connect with me on any of these platforms.
