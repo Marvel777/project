@@ -44,8 +44,8 @@ export function ProjectCardDetailed({ project, index }: ProjectCardDetailedProps
         </div>
 
         <div className="p-6 flex flex-col flex-grow">
-          <h3 className="text-xl font-semibold mb-2">{ project.title }</h3>
-          <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+          <h3 className="text-xl font-semibold mb-2 capitalize">{ project.title }</h3>
+          <p className="text-muted-foreground text-sm mb-4 line-clamp-3 capitalize">
             { project.description }
           </p>
 
@@ -83,7 +83,7 @@ function ProjectDetailDialog({
       <DialogContent className="max-w-4xl w-[90vw]">
         <DialogHeader>
           <div className="flex justify-between items-center">
-            <DialogTitle className="text-2xl">{ project.title }</DialogTitle>
+            <DialogTitle className="text-2xl capitalize">{ project.title }</DialogTitle>
 
           </div>
           <DialogDescription>
@@ -107,7 +107,7 @@ function ProjectDetailDialog({
 
           <div className="flex flex-col">
             <h3 className="text-xl font-semibold mb-4">Project Overview</h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-6 capitalize">
               { project.description }
             </p>
 
