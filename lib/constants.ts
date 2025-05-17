@@ -111,7 +111,17 @@ export const projects: Project[] = [
     demoUrl: "https://sftouch-clinic.com/en/home",
     githubUrl: "https://github.com/Marvel777",
     featured: true,
+  }, {
+    id: "x-care",
+    title: "X Care",
+    description: "Access and manage your medical sessions with ease.Stay informed through expert-written health blogs.Track your medicines and prescriptions seamlessly.Connect instantly with healthcare professionals via chat.",
+    image: "/x-care.png",
+    tags: ["Angular", "TypeScript", "Tailwind CSS", "context", "django"],
+    demoUrl: "https://sftouch-clinic.com/en/home",
+    githubUrl: "https://github.com/Marvel777",
+    featured: false,
   },
+
 ];
 
 export type TimelineItem = {
