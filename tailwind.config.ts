@@ -62,6 +62,14 @@ const config: Config = {
         },
       },
       keyframes: {
+        'shiny-text': {
+          '0%, 90%, 100%': {
+            backgroundPosition: 'calc(-100% - var(--shiny-width)) 0',
+          },
+          '30%, 60%': {
+            backgroundPosition: 'calc(100% + var(--shiny-width)) 0',
+          },
+        },
         shine: {
           '0%': { backgroundPosition: '0% 0%' },
           '50%': { backgroundPosition: '100% 100%' },
@@ -103,6 +111,7 @@ const config: Config = {
         aurora: "aurora 60s linear infinite",
         scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
         shine: 'shine var(--duration, 2s) infinite linear',
+        'shiny-text': 'shiny-text 8s infinite',
       },
     },
   },

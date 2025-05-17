@@ -6,6 +6,7 @@ import { FileDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Timeline } from "@/components/ui/timeline";
 import { BackForwardButtons } from "@/components/back-forward-button";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
 export const metadata: Metadata = {
   title: "About | Frontend Developer Portfolio",
@@ -174,7 +175,9 @@ export default function AboutPage() {
   return (
     <div className="container px-4 mx-auto py-24 md:py-32">
       <BackForwardButtons />
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
+
         <div>
           <h1 className="text-3xl md:text-4xl font-bold mb-6">About Me</h1>
 
@@ -231,6 +234,9 @@ export default function AboutPage() {
 
       <div className="mb-16">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">My Journey</h2>
+        <VelocityScroll defaultVelocity={ 2 }>
+          Modern. Minimal. Powerful.
+        </VelocityScroll>
         <div className="relative w-full overflow-clip">
           <Timeline data={ data } />
         </div>
